@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+        <img src="image.png" alt="1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="container"> 
+            <div class="book">
+                <h1 class="heading">Fill up employee Details</h1>
+                <!-- Form for employee details -->
+        <form action="" id="offerForm" class="form">
+            <label for="name">Full Name:</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Enter Full Name" required>
+
+            <label for="position">Position:</label>
+            <input class="input" type="text" id="position" name="position" placeholder="Enter Employee Position" required>
+
+            <label for="salary">Salary:</label>
+            <input class="input" type="number" id="salary" name="salary" placeholder="Enter Salary" required>
+
+            <label for="joiningDate">Joining Date:</label>
+            <input class="input" type="date" id="joiningDate" name="joiningDate" required>
+
+            <label for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Enter Email ID" required>
+            <div class="btn">
+             <button type="button" onclick="generateOfferLetter()">Generate Offer Letter</button>
+             <button class="previewbtn" type="Preview" onclick="previewOfferLetter()">Preview</button>
+             <button class="send" type="send" onclick="sendEmail()">Send By Email</button>
+             <p id="emailStatus"></p>
+
+            </div> 
+        </form>
+                <div class="cover">
+                    <h1 class="front">Offer Letter</h1>
+                    <span>Generator...</span>
+                   
+                </div>
+            </div>
+            <!-- Preview Section -->
+            <!-- <div id="previewSection" style="display:none; margin-top: 20px;">
+                <h2>Offer Letter Preview</h2>
+                <div id="previewContent"></div>
+             </div>   -->
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
